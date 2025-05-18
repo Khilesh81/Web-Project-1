@@ -1,0 +1,84 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 2px solid rgb(124, 18, 18);
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.items-center {
+    align-items: center;
+}
+
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.rounded {
+    border-radius: 7px;
+}
+
+.m-1 {
+    margin: 7px;
+}
+
+.p-1 {
+    padding: 9px;
+}
+
+.add-svg {
+    position: absolute;
+    left: 268px;
+}
+
+/* For WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e1e1e;  /* Dark background */
+ } 
+
+::-webkit-scrollbar-thumb {
+  background-color: #555;    /* Dark gray thumb */
+  border-radius: 6px;
+  border: 3px solid #1e1e1e; /* Matches track */
+ } 
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #777;    /* Lighter on hover */
+}
+
+For Firefox
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #555 #1e1e1e;
+}

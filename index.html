@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/media.css">
+
+
+    <div class="container flex bg-black">
+        <div class="left rounded m-1 p-1">
+            <div class="home bg-grey">
+                <div class="logo ">
+
+                    <img class="invert" src="images/spotifylogo.png" style="height: 45px;" width="141px;" alt="">
+                    <img class="invert cancel" src="svg/cancel.svg" alt="">
+                </div>
+
+
+                <ul>
+                    <li> <img class="invert" src="svg/home.svg" alt="">Home</li>
+                    <li> <img class="invert" src="svg/search.svg" alt="">Search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey">
+                <div class="heading ">
+                    <img src="images/libraryimge.png" alt="">
+                    <h2>Your Library</h2>
+                    <img class="invert add-svg" src="svg/add.svg" alt="">
+                </div>
+
+                <div class="songlist">
+                    <ul>
+
+
+
+
+
+
+                    </ul>
+                </div>
+
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/in-en/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy
+                                Center</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+                    <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right bg-grey rounded p-1">
+            <div class="header">
+                <img class="hamburger invert" src="svg/hamburger.svg" alt="">
+                <div class="nav">
+                    <img class="invert leftarrowsign" src="images/leftarrowsign.png"
+                        srcset="https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/left-arrow-back-128.png 2x"
+                        alt="arrow, back, left, direction, move, navigation ">
+                    <img class="invert" src="images/rightarrowsign.png"
+                        srcset="https://cdn4.iconfinder.com/data/icons/basic-user-interface-elements/700/right-forward-arrow-128.png 2x"
+                        alt="arrow, forward, right, move, navigation, next ">
+
+                </div>
+                <div class="button">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginbtn">Log in</button>
+                </div>
+            </div>
+
+            <div class="spotifyplaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="cardcontainer ">
+                    <!-- <div data-folder="ncs" class="card rounded">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="51" height="44" viewBox="0 0 512 512">
+                                Green circular background
+                                <circle cx="229" cy="258" r="256" fill="#1fdf64" />
+                                Large black triangular play icon
+                                <path d="M360 256L160 120v272z" fill="black" />
+                            </svg>
+
+                        </div>
+                        <img src="images/Arijit Singh Radio.jpg" alt="">
+                        <h3>Qatal</h3>
+                        <div>Guru Randhawa,Sanjay,Gill Machhrai</div>
+                    </div> -->
+
+                </div>
+
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="songdetail">
+                        <div class="songbar">
+                            Cream posse
+                        </div>
+                        <div class="playstation">
+                            <img id="previous" class="invert" src="svg/prev.svg" alt="">
+                            <img id="play" class="invert" src="svg/play.svg" alt="">
+                            <img id="next" class="invert" src="svg/next.svg" alt="">
+                        </div>
+
+                        <div class="songtime">
+                            <div class="starttime"></div>
+                            <div class="endtime"></div>
+                            <div class="volume">
+                                <div class="volumebar">
+                                    <div class="volcircle">
+
+                                    </div>
+                                </div>
+
+                                <div class="volumeimage">
+                                    <img class="invert volumemute" src="svg/volumemute.svg" alt="">
+                                    <img class="invert volumelow" src="svg/volumelow.svg" alt="">
+                                    <img class="invert volumemed" src="svg/volumemed.svg" alt="">
+                                    <img class="invert volumehigh" src="svg/volumehigh.svg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="js/script.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- xmlns="http://www.w3.org/2000/svg" -->
+</body>
+
+</html>

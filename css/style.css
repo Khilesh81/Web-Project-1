@@ -1,0 +1,432 @@
+body {
+    color: white;
+    background-color: black;
+    display: flex;
+}
+
+:root {
+    --a: 0;
+}
+
+.left {
+    width: 20vw;
+}
+
+.right {
+    width: 76vw;
+    margin: 16px 0px;
+    position: relative;
+}
+
+.home {
+    border-radius: 6px;
+}
+
+.home ul {
+    margin: 1px 0px 13px 10px;
+}
+
+.home ul li {
+    display: flex;
+    gap: 10px;
+    height: 25px;
+    width: 25px;
+    list-style: none;
+    padding-top: 13px;
+    padding-bottom: 14px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.heading {
+    display: flex;
+    margin: 7px;
+    gap: 10px;
+    height: 25px;
+    width: 100%;
+    padding-top: 10px;
+    font-size: 13px;
+    align-items: center;
+}
+
+.heading img:first-child {
+    width: 36px;
+}
+
+.cancel {
+    height: 30px;
+    position: absolute;
+    left: 283px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+
+.footer {
+    display: flex;
+    gap: 8px;
+    font-size: 10px;
+    position: static;
+    padding: 10px 0px;
+}
+
+.footer a {
+    color: grey;
+}
+
+.library {
+    min-height: 70vh;
+    position: relative;
+    border-radius: 9px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #241f1f;
+}
+
+.header .nav {
+    padding: 13px 0px 12px 15px;
+}
+
+.header .button {
+    padding: 10px;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.nav img {
+    width: 27px;
+    height: 27px;
+}
+
+.nav img:last-child {
+    position: absolute;
+    left: 84px;
+}
+
+.heading img {
+    height: 33px;
+    width: 26px;
+}
+
+.heading h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.spotifyplaylists h1 {
+    margin: 13px;
+}
+
+.cardcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 8px;
+    position: relative;
+    overflow-y: scroll;
+    max-height: 65vh;
+}
+
+.card {
+    width: 11vw;
+    height: 36vh;
+    background-color: #252525;
+    margin: 19px 0px 0px 12px;
+    transition: all 0.9s;
+    position: relative;
+}
+
+.card:hover {
+    background-color: #393838;
+    cursor: pointer;
+    transition: all 1s ease-out;
+    --a: 1;
+}
+
+.card img {
+    width: 21vh;
+    object-fit: contain;
+    border-radius: 14px;
+    padding: 8px;
+}
+
+.card div {
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: auto;
+    overflow: hidden;
+    font-size: 13.5px;
+    margin-left: 9px;
+}
+
+.card h3,
+.card div {
+    margin-left: 8px;
+    margin-top: 3px;
+}
+
+.card h3:hover,
+.card div:hover {
+    text-decoration: underline;
+}
+
+.play {
+    position: absolute;
+    top: 109px;
+    left: 109px;
+    opacity: var(--a);
+    transition: all 0.1s ease-out;
+}
+
+.signupbtn {
+    background-color: #1f1f1f;
+    /* color: gray; */
+    color: white;
+    /* border: 2px solid #1f1f1f; */
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 6px 16px 6px 16px;
+    margin-right: 13px;
+}
+
+.signupbtn:hover {
+    background-color: #1f1f1f;
+    color: white;
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.loginbtn {
+    background-color: white;
+    color: #1f1f1f;
+    /* border: 2px solid #1f1f1f; */
+    border: 2px solid white;
+    border-radius: 25px;
+    font-size: 16px;
+    padding: 6px 16px 6px 16px;
+    margin-right: 6px;
+}
+
+.loginbtn:hover {
+    background-color: white;
+    color: #1f1f1f;
+    cursor: pointer;
+    scale: 1.05;
+}
+
+.playbar {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #1f1f1f;
+    width: 77vw;
+    border-radius: 13px;
+    min-height: 11vh;
+}
+
+#previous {
+    cursor: pointer;
+}
+
+#next {
+    cursor: pointer;
+}
+
+.playbar img {
+    width: 32px;
+    height: 34px;
+    margin: 7px;
+}
+
+.playbar .playstation {
+    position: absolute;
+    left: 531px;
+    bottom: 25px;
+}
+
+.songlist {
+    overflow: auto;
+    height: 420px;
+    width: 305px;
+    margin: 15px 0px;
+}
+
+.songlist ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    padding-top: 16px;
+}
+
+.songlist ul li {
+    list-style: none;
+    list-style-type: decimal;
+    margin-bottom: 17px;
+    width: 254px;
+    display: flex;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+    position: relative;
+    height: 64px;
+}
+
+.songlist ul li img {
+    width: 36px;
+    height: 62px;
+    margin-left: 6px;
+}
+
+.songinfo {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 148px;
+    margin: 9px 0px 8px 5px;
+    height: 47px;
+    font-size: 12px;
+}
+
+.songname {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.playnow {
+    height: 61px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    width: 80px;
+    flex-direction: column-reverse;
+    position: absolute;
+    left: 181px;
+}
+
+.playnow span {
+    margin: 0px 8px 2px 16px;
+}
+
+.seekbar {
+    height: 2px;
+    width: 66vw;
+    filter: invert(1);
+    background-color: #1f1f1f;
+    position: absolute;
+    bottom: 20px;
+    left: 83px;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    filter: invert(1);
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    transition: left 0.5s;
+}
+
+.playstation img {
+    cursor: pointer;
+}
+
+
+.songdetail {
+    border: 2px solid gainsboro;
+    display: flex;
+    height: 10vh;
+    border-radius: 8px;
+}
+
+.starttime {
+    position: absolute;
+    left: 31px;
+    bottom: 14px;
+}
+
+.endtime {
+    position: absolute;
+    right: 27px;
+    bottom: 14px;
+}
+
+.volume img {
+    position: absolute;
+    height: 25px;
+    bottom: 32px;
+    right: 238px;
+    cursor: pointer;
+}
+
+.songbar {
+    display: flex;
+    position: absolute;
+    left: 31px;
+    bottom: 48px;
+    /* width: ; */
+    /*
+
+
+
+
+    according to you 
+
+
+
+
+
+    */
+}
+
+.volumemute,
+.volumelow,
+.volumemed {
+    display: none;
+}
+
+
+.volumebar {
+    height: 4px;
+    width: 10vw;
+    filter: invert(1);
+    background-color: #1f1f1f;
+    position: absolute;
+    bottom: 47px;
+    right: 85px;
+    border: 2px solid white;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.volcircle {
+    height: 11px;
+    width: 11px;
+    filter: invert(1);
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -3px;
+    right: 0px;
+    cursor: pointer;
+    transition: left 0.5s;
+}
+
+.volumebar :hover {
+    background-color: green;
+    accent-color: green;
+}

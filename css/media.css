@@ -1,0 +1,159 @@
+@media (max-width: 1440px) {
+    /* give me all code for responsiveness */
+
+    .left {
+        width: min-content;
+        position: absolute;
+        left: -120%;
+        z-index: 1;
+        background-color: #1f1f1f;
+        transition: all 0.3s;
+    }
+
+    .right {
+        /* display: flex; */
+        flex-direction: column;
+        position: absolute;
+        width: 97vw;
+    }
+
+
+    .cardcontainer {
+        justify-content: center;
+    }
+
+    .cardcontainer {
+        gap: 7px;
+    }
+
+    .card {
+        width: 151px;
+        height: 243px;
+    }
+
+    .card img {
+        object-fit: contain;
+        width: 133px;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        height: 57px;
+        width: 72px;
+        left: 5px;
+        top: 7px;
+    }
+
+    .nav .leftarrowsign {
+        position: absolute;
+        left: 80px;
+    }
+
+    .nav img:last-child {
+        position: absolute;
+        left: 133px;
+    }
+
+    .cancel {
+        position: absolute;
+        left: 274px;
+        top: 17px;
+        display: inline;
+    }
+
+    .playbar {
+        position: absolute;
+        height: 11vh;
+        bottom: 0;
+        /* width: -webkit-fill-available; */
+        width: calc(105vw - 89px);
+        margin: 0px 19px;
+    }
+
+    .seekbar {
+        width: calc(88vw - 71px);
+        position: absolute;
+        bottom: 30px;
+    }
+
+    .playstation {
+        display: flex;
+        justify-content: center;
+        margin-left: 24px;
+    }
+
+    .songdetail {
+        position: absolute;
+        width: -webkit-fill-available;
+    }
+
+}
+
+@media (max-width : 431px) {
+    .playbar {
+        position: fixed;
+        width: 90vw;
+        height: 29vw;
+        bottom: 26px;
+    }
+
+    .songdetail {
+        height: 29vw;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    .seekbar {
+        width: 54vw;
+        position: absolute;
+        bottom: 14px;
+        left: 17vw;
+    }
+
+    .starttime ,.endtime{
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .songbar {
+        position: absolute;
+        left: 0px;
+        bottom: 22vw;
+        width: 87vw;
+        height: 5vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .playstation {
+        display: flex;
+        margin: 0px 0px 21px -417px;
+    }
+
+    .volume {
+        position: absolute;
+        left: 77vw;
+        bottom: -3vw;
+    }
+
+    .volumebar {
+        width: 21vw;
+    }
+
+    .volcircle {
+        position: relative;
+        left: 0vw;
+        bottom: 4px;
+    }
+
+    .volumeimage {
+        position: absolute;
+        left: 15vw;
+    }
+
+    .card img{
+        width: 130px;
+        object-fit: contain;
+    }
+}
