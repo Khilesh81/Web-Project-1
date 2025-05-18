@@ -256,6 +256,17 @@ async function main() {
         currentsong.volume = percent3;
     });
 
+    // Play the next song in order after the current one ends
+    currentsong.addEventListener("ended", () => {
+        if (songs && songs.length > 0) {
+            let currentIndex = songs.indexOf(currentsong.src.split("/").slice(-1)[0]);
+            let nextIndex = currentIndex + 1;
+            if (nextIndex < songs.length) {
+                playMusic(songs[nextIndex]);
+            }
+        }
+    });
+
 
 }
 
