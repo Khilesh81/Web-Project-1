@@ -98,6 +98,11 @@
         bottom: 26px;
     }
 
+    .play{
+        top: 87px;
+        left: 81px;
+    }
+
     .songdetail {
         height: 29vw;
         align-items: center;
