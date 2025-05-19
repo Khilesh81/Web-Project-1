@@ -130,7 +130,6 @@ body {
     flex-wrap: wrap;
     gap: 8px;
     position: relative;
-    overflow-y: scroll;
     max-height: 65vh;
 }
 
