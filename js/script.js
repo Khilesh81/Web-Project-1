@@ -21,6 +21,7 @@ function convertSecondsToMinutes(seconds) {
 
 async function getSongs(folder) {
     currfolder = folder;
+    // Your external browser url in this fetch to get folder of songs
     let a = await fetch(`http://127.0.0.1:3000/${folder}/`);
     console.log(a)
     let response = await a.text();
@@ -85,6 +86,7 @@ const playMusic = (track, pause = false) => {
 }
 
 async function displayalbums() {
+    // your brwoser url to fetch song from folder
     let a = await fetch(`http://127.0.0.1:3000/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
